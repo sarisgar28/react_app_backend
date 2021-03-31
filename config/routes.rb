@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   end
 
   post '/login', to: 'auth#create'
-  post '/signup', to: 'auth#signup'
+  get '/signup', to: 'auth#signup'
 
 end
