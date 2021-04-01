@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :expenses
   end
 
-  post '/login', to: 'auth#create'
-  get '/signup', to: 'auth#signup'
+  post '/login', to: 'auth#login'
+  get '/profile', to: 'auth#profile'
 
 end
