@@ -13,14 +13,26 @@ class ExpensesController < ApplicationController
         render json: @expense
     end 
     
-    def create
+    def create 
+        @user = User.find_or_create_by(user_params)
+        @expense = user.expenses.build(expenses_params)
+       if @user.valid? && @expense.save
+            render json:  @expense
+        else 
+            render json: {error: "Ooops! It didn't work, try again!"}
+        end
     end 
 
     def update 
     end 
     
+
+
     def destroy
-    end 
+        @expense = Expense.find_by_id(params[:id])
+        @expense.destroy
+        render json: @expense
+    end
     
     
     
@@ -29,5 +41,17 @@ class ExpensesController < ApplicationController
 
     def find_user
         @user = User.find_by(id: params[:user_id])
-      end
+    end
+
+    private 
+
+   def expenses_params
+       params.require(:expense).permit(:name, :amount, :user_id)
+    end
+
+
+   def user_params
+    params.require(:user).permit(:username, :password)
+ end
+    
 end
