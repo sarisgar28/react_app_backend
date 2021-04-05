@@ -26,6 +26,7 @@ class AuthController < ApplicationController
   
   
     def profile
+      # byebug
       render json: @user
     end
 

@@ -3,8 +3,11 @@ Rails.application.routes.draw do
   resources :users do
     resources :expenses
   end
+ 
 
   post '/login', to: 'auth#login'
   get '/profile', to: 'auth#profile'
+
+  
 
 end
