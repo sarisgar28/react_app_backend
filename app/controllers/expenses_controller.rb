@@ -25,6 +25,8 @@ class ExpensesController < ApplicationController
     end 
 
     def update 
+        @expense.update(expenses_params)
+        render json: @expense
     end 
     
 
