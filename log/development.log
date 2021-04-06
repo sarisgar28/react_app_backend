@@ -6941,3 +6941,614 @@ Migrating to CreateExpenses (20210330140340)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "budget" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["budget", 19000], ["updated_at", "2021-04-06 20:30:22.197622"], ["id", 2]]
   [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/rails/info/routes" for ::1 at 2021-04-06 16:37:57 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/saragarcia/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/saragarcia/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (Duration: 7.1ms | Allocations: 3650)
+  Rendered /Users/saragarcia/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 6.1ms | Allocations: 930)
+  Rendered /Users/saragarcia/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 18.4ms | Allocations: 6886)
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 8768)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 16:40:34 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 59ms (Views: 5.0ms | ActiveRecord: 0.7ms | Allocations: 4496)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 16:43:01 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.34ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 5.1ms | ActiveRecord: 1.0ms | Allocations: 1624)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 16:43:12 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.17ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1624)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 16:43:14 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1624)
+
+
+Started POST "/login" for ::1 at 2021-04-06 16:43:32 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 902)
+
+
+Started POST "/login" for ::1 at 2021-04-06 16:43:38 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 740)
+
+
+Started POST "/login" for ::1 at 2021-04-06 16:43:41 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 740)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 16:43:43 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 233)
+
+
+Started POST "/login" for ::1 at 2021-04-06 16:43:51 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 740)
+
+
+Started POST "/login" for ::1 at 2021-04-06 16:44:20 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 738)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 16:44:24 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 16:44:39 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started POST "/login" for ::1 at 2021-04-06 16:44:47 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"sara", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"sara", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sara"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 740)
+
+
+Started POST "/login" for ::1 at 2021-04-06 16:44:52 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Sara", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Sara", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Sara"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 738)
+
+
+Started POST "/login" for ::1 at 2021-04-06 16:44:54 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Sara", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Sara", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Sara"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 738)
+
+
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "income", "budget", "year", "monthly", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "sara"], ["income", 90], ["budget", 15000], ["year", 1], ["monthly", 0], ["password_digest", "$2a$12$pzPr1FqF4bL/oI2y4G3KWODLdAbZnmONuWU50fq7kjHMDymuPm4CO"], ["created_at", "2021-04-06 20:48:56.669039"], ["updated_at", "2021-04-06 20:48:56.669039"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/profile" for ::1 at 2021-04-06 16:49:12 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 391)
+
+
+Started POST "/login" for ::1 at 2021-04-06 16:49:20 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 2523)
+
+
+Started POST "/login" for ::1 at 2021-04-06 16:49:42 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 738)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 16:50:07 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started POST "/login" for ::1 at 2021-04-06 16:50:37 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 738)
+
+
+Started GET "/users" for ::1 at 2021-04-06 16:50:42 -0400
+  
+SyntaxError (/Users/saragarcia/Flatiron/react_app/backend/app/controllers/users_controller.rb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ame: params[:username] password: params[:password] income: p...
+...                       ^~~~~~~~
+/Users/saragarcia/Flatiron/react_app/backend/app/controllers/users_controller.rb:17: syntax error, unexpected tIDENTIFIER, expecting end
+...sword: params[:password] income: params[:income]
+...                         ^~~~~~
+/Users/saragarcia/Flatiron/react_app/backend/app/controllers/users_controller.rb:18: syntax error, unexpected ':', expecting end
+       budget: params[:budget] year: params...
+             ^
+/Users/saragarcia/Flatiron/react_app/backend/app/controllers/users_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting end
+...   budget: params[:budget] year: params[:year] monthly: para...
+...                           ^~~~
+/Users/saragarcia/Flatiron/react_app/backend/app/controllers/users_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting end
+...et] year: params[:year] monthly: params[:monthly])
+...                        ^~~~~~~
+/Users/saragarcia/Flatiron/react_app/backend/app/controllers/users_controller.rb:18: syntax error, unexpected ')', expecting end
+...ear] monthly: params[:monthly])
+...                              ^
+/Users/saragarcia/Flatiron/react_app/backend/app/controllers/users_controller.rb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ame: params[:username] password: params[:password] income: p...
+...                       ^~~~~~~~
+/Users/saragarcia/Flatiron/react_app/backend/app/controllers/users_controller.rb:24: syntax error, unexpected tIDENTIFIER, expecting end
+...sword: params[:password] income: params[:income]
+...                         ^~~~~~
+/Users/saragarcia/Flatiron/react_app/backend/app/controllers/users_controller.rb:25: syntax error, unexpected ':', expecting end
+      budget: params[:budget] year: params...
+            ^
+/Users/saragarcia/Flatiron/react_app/backend/app/controllers/users_controller.rb:25: syntax error, unexpected tIDENTIFIER, expecting end
+...   budget: params[:budget] year: params[:year] monthly: para...
+...                           ^~~~
+/Users/saragarcia/Flatiron/react_app/backend/app/controllers/users_controller.rb:25: syntax error, unexpected tIDENTIFIER, expecting end
+...et] year: params[:year] monthly: params[:monthly])
+...                        ^~~~~~~
+/Users/saragarcia/Flatiron/react_app/backend/app/controllers/users_controller.rb:25: syntax error, unexpected ')', expecting end
+...ear] monthly: params[:monthly])
+...                              ^):
+  
+app/controllers/users_controller.rb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/users_controller.rb:17: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/users_controller.rb:18: syntax error, unexpected ':', expecting end
+app/controllers/users_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/users_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/users_controller.rb:18: syntax error, unexpected ')', expecting end
+app/controllers/users_controller.rb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/users_controller.rb:24: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/users_controller.rb:25: syntax error, unexpected ':', expecting end
+app/controllers/users_controller.rb:25: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/users_controller.rb:25: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/users_controller.rb:25: syntax error, unexpected ')', expecting end
+app/controllers/users_controller.rb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/users_controller.rb:17: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/users_controller.rb:18: syntax error, unexpected ':', expecting end
+app/controllers/users_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/users_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/users_controller.rb:18: syntax error, unexpected ')', expecting end
+app/controllers/users_controller.rb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/users_controller.rb:24: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/users_controller.rb:25: syntax error, unexpected ':', expecting end
+app/controllers/users_controller.rb:25: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/users_controller.rb:25: syntax error, unexpected tIDENTIFIER, expecting end
+app/controllers/users_controller.rb:25: syntax error, unexpected ')', expecting end
+Started GET "/users" for ::1 at 2021-04-06 16:51:27 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.92ms)
+Completed 200 OK in 63ms (Views: 59.9ms | ActiveRecord: 1.5ms | Allocations: 17696)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 16:51:32 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 393)
+
+
+Started POST "/login" for ::1 at 2021-04-06 16:51:39 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 880)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 16:52:14 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 397)
+
+
+Started POST "/login" for ::1 at 2021-04-06 16:52:22 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 2522)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 16:53:00 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 391)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:00:21 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:01:11 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:08:44 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.66ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 13ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started POST "/login" for ::1 at 2021-04-06 17:08:50 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 59ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 4000)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:11:25 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:11:28 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:12:38 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:16:29 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.48ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:18:18 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started POST "/login" for ::1 at 2021-04-06 17:18:24 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 738)
+
+
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Sara"], ["password_digest", "$2a$12$lt0hjOeamCLscMejKnF2rOLQTLXoKGwHEM9IRvrevWUe.IelMUSOu"], ["created_at", "2021-04-06 21:19:21.967524"], ["updated_at", "2021-04-06 21:19:21.967524"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Max"], ["password_digest", "$2a$12$tFJx0SPuNR7JdUulTStYteS7NNFLkWecbe0.MopUv69yQOsuxupgG"], ["created_at", "2021-04-06 21:19:22.184470"], ["updated_at", "2021-04-06 21:19:22.184470"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Vera"], ["password_digest", "$2a$12$lM5IoE63SM9UaUpMVUCu7Oyb2yON5U.t/TbafmOH0yVNZT7InWpuC"], ["created_at", "2021-04-06 21:19:22.410413"], ["updated_at", "2021-04-06 21:19:22.410413"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mExpense Create (0.3ms)[0m  [1m[32mINSERT INTO "expenses" ("name", "amount", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "salary"], ["amount", 5000], ["user_id", 4], ["created_at", "2021-04-06 21:19:22.421642"], ["updated_at", "2021-04-06 21:19:22.421642"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mExpense Create (0.3ms)[0m  [1m[32mINSERT INTO "expenses" ("name", "amount", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "utilities"], ["amount", 300], ["user_id", 4], ["created_at", "2021-04-06 21:19:22.425453"], ["updated_at", "2021-04-06 21:19:22.425453"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mExpense Create (0.3ms)[0m  [1m[32mINSERT INTO "expenses" ("name", "amount", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "transportation"], ["amount", 100], ["user_id", 4], ["created_at", "2021-04-06 21:19:22.428783"], ["updated_at", "2021-04-06 21:19:22.428783"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mExpense Create (0.3ms)[0m  [1m[32mINSERT INTO "expenses" ("name", "amount", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "salary"], ["amount", 6000], ["user_id", 5], ["created_at", "2021-04-06 21:19:22.432130"], ["updated_at", "2021-04-06 21:19:22.432130"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mExpense Create (0.3ms)[0m  [1m[32mINSERT INTO "expenses" ("name", "amount", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "utilities"], ["amount", 200], ["user_id", 5], ["created_at", "2021-04-06 21:19:22.435279"], ["updated_at", "2021-04-06 21:19:22.435279"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mExpense Create (0.3ms)[0m  [1m[32mINSERT INTO "expenses" ("name", "amount", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "transportation"], ["amount", 300], ["user_id", 5], ["created_at", "2021-04-06 21:19:22.438570"], ["updated_at", "2021-04-06 21:19:22.438570"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mExpense Create (0.4ms)[0m  [1m[32mINSERT INTO "expenses" ("name", "amount", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "salary"], ["amount", 8000], ["user_id", 6], ["created_at", "2021-04-06 21:19:22.441789"], ["updated_at", "2021-04-06 21:19:22.441789"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mExpense Create (0.4ms)[0m  [1m[32mINSERT INTO "expenses" ("name", "amount", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "utilities"], ["amount", 500], ["user_id", 6], ["created_at", "2021-04-06 21:19:22.445524"], ["updated_at", "2021-04-06 21:19:22.445524"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mExpense Create (0.4ms)[0m  [1m[32mINSERT INTO "expenses" ("name", "amount", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "transportation"], ["amount", 1000], ["user_id", 6], ["created_at", "2021-04-06 21:19:22.449457"], ["updated_at", "2021-04-06 21:19:22.449457"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/profile" for ::1 at 2021-04-06 17:19:30 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.12ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 233)
+
+
+Started POST "/login" for ::1 at 2021-04-06 17:19:38 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.99ms)
+Completed 200 OK in 226ms (Views: 1.5ms | ActiveRecord: 0.8ms | Allocations: 6553)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:19:45 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.7ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (26.78ms)
+Completed 200 OK in 62ms (Views: 50.7ms | ActiveRecord: 2.4ms | Allocations: 10688)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:19:51 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.5ms)
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 0.6ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:20:04 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.76ms)
+Completed 200 OK in 34ms (Views: 13.0ms | ActiveRecord: 0.5ms | Allocations: 3310)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:25:49 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.01ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:25:52 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.42ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.5ms | Allocations: 3307)
+
+
+Started POST "/login" for ::1 at 2021-04-06 17:26:00 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.41ms)
+Completed 200 OK in 213ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 1021)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:27:25 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.62ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:36:43 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.2ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.4ms | Allocations: 3348)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:44:26 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.05ms)
+Completed 200 OK in 15ms (Views: 9.1ms | ActiveRecord: 0.5ms | Allocations: 3348)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:47:53 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.95ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.5ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:48:03 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:48:08 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started POST "/login" for ::1 at 2021-04-06 17:48:14 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.15ms)
+Completed 200 OK in 215ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1044)
+
+
+Started GET "/profile" for ::1 at 2021-04-06 17:48:48 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.66ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
