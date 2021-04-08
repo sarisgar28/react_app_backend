@@ -8956,3 +8956,1523 @@ Processing by AuthController#profile as */*
 Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 3307)
 
 
+Started GET "/profile" for ::1 at 2021-04-07 22:20:46 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (1.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.22ms)
+Completed 200 OK in 93ms (Views: 7.0ms | ActiveRecord: 2.0ms | Allocations: 3351)
+
+
+Started GET "/profile" for ::1 at 2021-04-07 22:21:01 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.78ms)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-07 22:21:07 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.23ms)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.6ms | Allocations: 3307)
+
+
+Started POST "/login" for ::1 at 2021-04-07 22:21:20 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"lily", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lily", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "lily"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 1010)
+
+
+Started GET "/profile" for ::1 at 2021-04-07 22:22:21 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.77ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 1.3ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-07 22:24:57 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:30:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (12.23ms)
+Completed 200 OK in 35ms (Views: 14.0ms | ActiveRecord: 3.4ms | Allocations: 15953)
+
+
+Started POST "/login" for ::1 at 2021-04-07 22:25:12 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"martin", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"martin", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "martin"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:17:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1003)
+
+
+Started GET "/profile" for ::1 at 2021-04-07 22:25:25 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.6ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (24.16ms)
+Completed 200 OK in 55ms (Views: 30.6ms | ActiveRecord: 4.0ms | Allocations: 15952)
+
+
+Started POST "/login" for ::1 at 2021-04-07 22:25:33 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"martin", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"martin", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "martin"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:18:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1006)
+
+
+Started GET "/profile" for ::1 at 2021-04-07 22:25:54 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:32:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (17.09ms)
+Completed 200 OK in 47ms (Views: 18.8ms | ActiveRecord: 6.0ms | Allocations: 15910)
+
+
+Started POST "/login" for ::1 at 2021-04-07 22:26:01 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"martin", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"martin", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "martin"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:19:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 1007)
+
+
+Started POST "/login" for ::1 at 2021-04-07 22:26:30 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"martin", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"martin", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "martin"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:18:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 9ms (Views: 0.7ms | ActiveRecord: 1.5ms | Allocations: 2677)
+
+
+Started GET "/profile" for ::1 at 2021-04-07 22:26:33 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.6ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (15.19ms)
+Completed 200 OK in 46ms (Views: 18.1ms | ActiveRecord: 2.3ms | Allocations: 14275)
+
+
+Started POST "/login" for ::1 at 2021-04-07 22:26:39 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:18:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.47ms)
+Completed 200 OK in 222ms (Views: 0.9ms | ActiveRecord: 0.3ms | Allocations: 1030)
+
+
+Started POST "/login" for ::1 at 2021-04-07 22:26:55 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:18:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.4ms)
+Completed 200 OK in 211ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 1021)
+
+
+Started GET "/profile" for ::1 at 2021-04-07 22:27:02 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.05ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.5ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-07 22:27:47 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.03ms)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.7ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 10:36:11 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.7ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (73.87ms)
+Completed 200 OK in 110ms (Views: 83.4ms | ActiveRecord: 1.4ms | Allocations: 3351)
+
+
+Started PATCH "/users/8" for ::1 at 2021-04-08 10:36:28 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"100.000", "budget"=>"10.000", "monthly"=>false, "year"=>true}, "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Update (1.7ms)[0m  [1m[33mUPDATE "users" SET "budget" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["budget", 10], ["updated_at", "2021-04-08 14:36:28.935712"], ["id", 8]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (2.63ms)
+Completed 200 OK in 16ms (Views: 4.0ms | ActiveRecord: 3.0ms | Allocations: 5762)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 10:37:37 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.38ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 10:43:20 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (1.4ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.95ms)
+Completed 200 OK in 11ms (Views: 5.7ms | ActiveRecord: 2.3ms | Allocations: 3348)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 10:44:56 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.92ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.7ms | Allocations: 3307)
+
+
+Started PATCH "/users/8" for ::1 at 2021-04-08 10:45:03 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"100.000", "budget"=>"10.000", "monthly"=>false, "year"=>true}, "id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.05ms)
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 0.7ms | Allocations: 3481)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 10:48:18 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (1.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.69ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 1.5ms | Allocations: 3307)
+
+
+Started PATCH "/users/8" for ::1 at 2021-04-08 10:48:32 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"100.000", "budget"=>"10.000", "monthly"=>false, "year"=>true}, "id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.68ms)
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 1.0ms | Allocations: 3481)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 10:56:48 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.69ms)
+Completed 200 OK in 20ms (Views: 12.2ms | ActiveRecord: 1.1ms | Allocations: 3348)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 10:56:50 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.29ms)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.5ms | Allocations: 3307)
+
+
+Started POST "/login" for ::1 at 2021-04-08 10:57:04 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:18:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.47ms)
+Completed 200 OK in 221ms (Views: 2.0ms | ActiveRecord: 0.6ms | Allocations: 1044)
+
+
+Started PATCH "/users/8" for ::1 at 2021-04-08 10:57:20 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"100.000", "budget"=>"10.000", "monthly"=>false, "year"=>true}, "id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (2.58ms)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 3486)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 11:00:57 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.77ms)
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 11:12:23 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.6ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (13.87ms)
+Completed 200 OK in 43ms (Views: 16.4ms | ActiveRecord: 1.5ms | Allocations: 15222)
+
+
+Started PATCH "/users/8" for ::1 at 2021-04-08 11:19:15 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"100.000", "budget"=>"10.000", "monthly"=>false, "year"=>true}, "id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (1.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (37.61ms)
+Completed 200 OK in 46ms (Views: 39.2ms | ActiveRecord: 2.0ms | Allocations: 3672)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 11:22:32 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.14ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
+Started PATCH "/users/8" for ::1 at 2021-04-08 11:22:45 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"100.000", "budget"=>"10.000", "monthly"=>"true", "year"=>"false"}, "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Update (2.0ms)[0m  [1m[33mUPDATE "users" SET "year" = ?, "monthly" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["year", 0], ["monthly", 1], ["updated_at", "2021-04-08 15:22:45.587389"], ["id", 8]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (2.37ms)
+Completed 200 OK in 16ms (Views: 4.4ms | ActiveRecord: 4.2ms | Allocations: 5628)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 11:28:39 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.7ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.96ms)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 1.5ms | Allocations: 3348)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 11:28:58 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.17ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 371)
+
+
+Started POST "/login" for ::1 at 2021-04-08 11:29:08 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"chett", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"chett", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "chett"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:18:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 869)
+
+
+Started POST "/login" for ::1 at 2021-04-08 11:29:47 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"chett", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"chett", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "chett"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:18:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 738)
+
+
+Started GET "/rails/info/routes" for ::1 at 2021-04-08 11:32:01 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/saragarcia/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/saragarcia/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (Duration: 12.9ms | Allocations: 3651)
+  Rendered /Users/saragarcia/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 6.4ms | Allocations: 931)
+  Rendered /Users/saragarcia/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 25.8ms | Allocations: 6888)
+Completed 200 OK in 42ms (Views: 33.0ms | ActiveRecord: 0.0ms | Allocations: 8983)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 11:34:35 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 403)
+
+
+Started POST "/users" for ::1 at 2021-04-08 11:35:48 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"chett", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "chett"], ["password_digest", "$2a$12$ilNz0Qp2jii8I0IhTSdfI.iX/y.uECDB6u8E6GMMVUA7YW3rT.Nju"], ["created_at", "2021-04-08 15:35:49.072619"], ["updated_at", "2021-04-08 15:35:49.072619"]]
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:17:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.03ms)
+Completed 200 OK in 332ms (Views: 5.7ms | ActiveRecord: 8.9ms | Allocations: 9228)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 11:35:49 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (1.7ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (40.35ms)
+Completed 200 OK in 87ms (Views: 57.6ms | ActiveRecord: 3.7ms | Allocations: 4449)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 11:41:03 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (22.86ms)
+Completed 200 OK in 48ms (Views: 34.3ms | ActiveRecord: 0.6ms | Allocations: 2946)
+
+
+Started PATCH "/users/10" for ::1 at 2021-04-08 11:41:17 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"100.000", "budget"=>"10.000", "monthly"=>false, "year"=>true}, "id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "income" = ?, "budget" = ?, "year" = ?, "monthly" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["income", 100], ["budget", 10], ["year", 1], ["monthly", 0], ["updated_at", "2021-04-08 15:41:17.103639"], ["id", 10]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.0ms)
+Completed 200 OK in 51ms (Views: 13.6ms | ActiveRecord: 2.6ms | Allocations: 5313)
+
+
+Started POST "/login" for ::1 at 2021-04-08 11:50:44 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"chett", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"chett", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "chett"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:18:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.65ms)
+Completed 200 OK in 213ms (Views: 1.3ms | ActiveRecord: 0.6ms | Allocations: 1156)
+
+
+Started PATCH "/users/10" for ::1 at 2021-04-08 11:51:10 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"100.000", "budget"=>"10.000", "monthly"=>false, "year"=>"true"}, "id"=>"10"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.8ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.51ms)
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 1.3ms | Allocations: 3161)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 11:55:39 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.61ms)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.4ms | Allocations: 2946)
+
+
+Started PATCH "/users/10" for ::1 at 2021-04-08 11:55:57 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"100.000", "budget"=>"10.000", "monthly"=>"true", "year"=>"false"}, "id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "year" = ?, "monthly" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["year", 0], ["monthly", 1], ["updated_at", "2021-04-08 15:55:57.761021"], ["id", 10]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.4ms)
+Completed 200 OK in 16ms (Views: 4.8ms | ActiveRecord: 3.2ms | Allocations: 5266)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 12:13:24 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (3.5ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (15.78ms)
+Completed 200 OK in 26ms (Views: 14.9ms | ActiveRecord: 4.1ms | Allocations: 2987)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 12:28:55 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (2.88ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.4ms | Allocations: 2987)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 12:30:45 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.42ms)
+Completed 200 OK in 10ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 2946)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 12:32:13 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.14ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.4ms | Allocations: 2946)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:19:40 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (1.0ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (18.36ms)
+Completed 200 OK in 37ms (Views: 22.0ms | ActiveRecord: 4.2ms | Allocations: 2987)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:20:03 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.91ms)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.6ms | Allocations: 2946)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:20:17 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:33:42 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 233)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:34:04 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.65ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:34:16 -0400
+Processing by AuthController#profile as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started POST "/login" for ::1 at 2021-04-08 13:34:24 -0400
+Processing by AuthController#login as */*
+  Parameters: {"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"Max", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Max"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:18:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.94ms)
+Completed 200 OK in 215ms (Views: 1.4ms | ActiveRecord: 0.9ms | Allocations: 1045)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:46:28 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.7ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (80.52ms)
+Completed 200 OK in 85ms (Views: 81.4ms | ActiveRecord: 1.8ms | Allocations: 8904)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:46:33 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.8ms)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 0.7ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:46:38 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.42ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
+Started GET "/users/8/expenses" for ::1 at 2021-04-08 13:46:50 -0400
+Processing by ExpensesController#index as */*
+  Parameters: {"user_id"=>"8", "expense"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/expenses_controller.rb:46:in `find_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/controllers/expenses_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.72ms)
+Completed 200 OK in 18ms (Views: 10.0ms | ActiveRecord: 0.8ms | Allocations: 3264)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:49:36 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.77ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:49:38 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.65ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.5ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:50:45 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.97ms)
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 1.1ms | Allocations: 3307)
+
+
+Started GET "/users/8/expenses" for ::1 at 2021-04-08 13:50:55 -0400
+Processing by ExpensesController#index as */*
+  Parameters: {"user_id"=>"8", "expense"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/expenses_controller.rb:46:in `find_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/controllers/expenses_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.95ms)
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 1.1ms | Allocations: 3149)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:51:21 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.13ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.5ms | Allocations: 3307)
+
+
+Started GET "/users/8/expenses" for ::1 at 2021-04-08 13:51:30 -0400
+Processing by ExpensesController#index as */*
+  Parameters: {"user_id"=>"8", "expense"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/expenses_controller.rb:46:in `find_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/controllers/expenses_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.81ms)
+Completed 200 OK in 18ms (Views: 9.9ms | ActiveRecord: 0.7ms | Allocations: 3149)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:55:59 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.91ms)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 1.6ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 13:59:58 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.57ms)
+Completed 200 OK in 23ms (Views: 13.4ms | ActiveRecord: 0.6ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 14:00:11 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (71.9ms)
+Completed 200 OK in 79ms (Views: 75.6ms | ActiveRecord: 0.7ms | Allocations: 3310)
+
+
+Started PATCH "/users/8" for ::1 at 2021-04-08 14:00:20 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"100.000", "budget"=>"10.000", "monthly"=>false, "year"=>true}, "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "year" = ?, "monthly" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["year", 1], ["monthly", 0], ["updated_at", "2021-04-08 18:00:20.134633"], ["id", 8]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.62ms)
+Completed 200 OK in 18ms (Views: 5.4ms | ActiveRecord: 4.3ms | Allocations: 5626)
+
+
+Started PATCH "/users/8" for ::1 at 2021-04-08 14:00:23 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"", "budget"=>"", "monthly"=>"", "year"=>""}, "id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "income" = ?, "budget" = ?, "year" = ?, "monthly" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["income", nil], ["budget", nil], ["year", nil], ["monthly", nil], ["updated_at", "2021-04-08 18:00:23.075372"], ["id", 8]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.53ms)
+Completed 200 OK in 15ms (Views: 5.7ms | ActiveRecord: 2.6ms | Allocations: 5647)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 14:00:43 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.52ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.5ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 14:01:24 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.03ms)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 14:06:00 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.69ms)
+Completed 200 OK in 12ms (Views: 6.9ms | ActiveRecord: 0.5ms | Allocations: 3307)
+
+
+Started DELETE "/users" for ::1 at 2021-04-08 14:11:07 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [DELETE] "/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/profile" for ::1 at 2021-04-08 14:18:52 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.8ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (10.87ms)
+Completed 200 OK in 24ms (Views: 13.7ms | ActiveRecord: 1.5ms | Allocations: 3348)
+
+
+Started DELETE "/users" for ::1 at 2021-04-08 14:18:54 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/profile" for ::1 at 2021-04-08 14:23:37 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.97ms)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.8ms | Allocations: 3306)
+
+
+Started GET "/users/8/expenses" for ::1 at 2021-04-08 14:23:50 -0400
+Processing by ExpensesController#index as */*
+  Parameters: {"user_id"=>"8", "expense"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/expenses_controller.rb:46:in `find_user'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/controllers/expenses_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.42ms)
+Completed 200 OK in 27ms (Views: 16.2ms | ActiveRecord: 1.5ms | Allocations: 3149)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 14:43:34 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.7ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.84ms)
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 1.2ms | Allocations: 3349)
+
+
+Started DELETE "/users" for ::1 at 2021-04-08 14:44:33 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/profile" for ::1 at 2021-04-08 14:45:51 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.57ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.5ms | Allocations: 3306)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 15:21:02 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.7ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.51ms)
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 1.7ms | Allocations: 3348)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 15:23:19 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (26.15ms)
+Completed 200 OK in 64ms (Views: 48.9ms | ActiveRecord: 0.8ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 15:23:25 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.6ms)
+Completed 200 OK in 13ms (Views: 8.9ms | ActiveRecord: 0.5ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 15:23:29 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.07ms)
+Completed 200 OK in 16ms (Views: 10.8ms | ActiveRecord: 0.7ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 15:23:51 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.43ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.5ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 15:24:13 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.14ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 15:24:16 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.1ms)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.5ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 15:24:33 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.56ms)
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 15:24:38 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.77ms)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
+Started DELETE "/users" for ::1 at 2021-04-08 15:27:20 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started PATCH "/users/8" for ::1 at 2021-04-08 15:27:31 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"100.000", "budget"=>"10.000", "monthly"=>false, "year"=>true}, "id"=>"8"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Update (2.3ms)[0m  [1m[33mUPDATE "users" SET "income" = ?, "budget" = ?, "year" = ?, "monthly" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["income", 100], ["budget", 10], ["year", 1], ["monthly", 0], ["updated_at", "2021-04-08 19:27:31.810765"], ["id", 8]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.1ms)
+Completed 200 OK in 67ms (Views: 4.9ms | ActiveRecord: 4.7ms | Allocations: 5650)
+
+
+Started DELETE "/users" for ::1 at 2021-04-08 15:27:34 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/users"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/profile" for ::1 at 2021-04-08 16:09:21 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.8ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.9ms)
+Completed 200 OK in 27ms (Views: 16.3ms | ActiveRecord: 1.6ms | Allocations: 3348)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 16:09:56 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.56ms)
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 0.8ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 16:15:25 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.07ms)
+Completed 200 OK in 15ms (Views: 8.3ms | ActiveRecord: 0.7ms | Allocations: 3307)
+
+
+Started PATCH "/users/8" for ::1 at 2021-04-08 16:15:41 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"100", "budget"=>"10", "monthly"=>"true", "year"=>true}, "id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Update (2.1ms)[0m  [1m[33mUPDATE "users" SET "monthly" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["monthly", 1], ["updated_at", "2021-04-08 20:15:41.779994"], ["id", 8]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.19ms)
+Completed 200 OK in 22ms (Views: 5.1ms | ActiveRecord: 5.3ms | Allocations: 5614)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 16:26:32 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.9ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (21.09ms)
+Completed 200 OK in 50ms (Views: 27.9ms | ActiveRecord: 1.9ms | Allocations: 3348)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 16:26:34 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.29ms)
+Completed 200 OK in 19ms (Views: 12.1ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
+Started PATCH "/users/8" for ::1 at 2021-04-08 16:26:43 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"100", "budget"=>"10", "monthly"=>false, "year"=>true}, "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Update (1.9ms)[0m  [1m[33mUPDATE "users" SET "monthly" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["monthly", 0], ["updated_at", "2021-04-08 20:26:43.801197"], ["id", 8]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.82ms)
+Completed 200 OK in 24ms (Views: 8.4ms | ActiveRecord: 4.0ms | Allocations: 5614)
+
+
+Started PATCH "/users/8" for ::1 at 2021-04-08 16:27:16 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"100", "budget"=>"10", "monthly"=>false, "year"=>true}, "id"=>"8"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.6ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.78ms)
+Completed 200 OK in 22ms (Views: 11.7ms | ActiveRecord: 2.5ms | Allocations: 3482)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 16:43:34 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.7ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (16.53ms)
+Completed 200 OK in 40ms (Views: 25.5ms | ActiveRecord: 2.8ms | Allocations: 3348)
+
+
+Started PATCH "/users/8" for ::1 at 2021-04-08 16:43:40 -0400
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"income"=>"10", "budget"=>"10", "monthly"=>false, "year"=>true}, "id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `update'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Update (1.3ms)[0m  [1m[33mUPDATE "users" SET "income" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["income", 10], ["updated_at", "2021-04-08 20:43:40.883217"], ["id", 8]]
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:29:in `update'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:30:in `update'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (2.96ms)
+Completed 200 OK in 20ms (Views: 4.8ms | ActiveRecord: 3.2ms | Allocations: 5614)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 16:44:47 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.52ms)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 16:45:16 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.55ms)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.5ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 16:52:41 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.6ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.59ms)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 1.1ms | Allocations: 3348)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 16:53:48 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (2.9ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 17:03:23 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.6ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.06ms)
+Completed 200 OK in 23ms (Views: 12.7ms | ActiveRecord: 1.2ms | Allocations: 3349)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 17:04:09 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.17ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.4ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 17:19:21 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.6ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.1ms)
+Completed 200 OK in 20ms (Views: 11.9ms | ActiveRecord: 1.3ms | Allocations: 3348)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 17:19:23 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.2ms)
+Completed 200 OK in 76ms (Views: 72.5ms | ActiveRecord: 0.4ms | Allocations: 3310)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 17:20:44 -0400
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.78ms)
+Completed 200 OK in 21ms (Views: 17.3ms | ActiveRecord: 0.5ms | Allocations: 3307)
+
+
+Started GET "/profile" for ::1 at 2021-04-08 17:32:29 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AuthController#profile as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26:in `current_user'
+[active_model_serializers]   [1m[36mExpense Load (0.7ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/auth_controller.rb:31:in `profile'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.76ms)
+Completed 200 OK in 26ms (Views: 14.3ms | ActiveRecord: 2.0ms | Allocations: 3348)
+
+

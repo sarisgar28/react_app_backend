@@ -31,7 +31,9 @@ class UsersController < ApplicationController
     end 
 
     def destroy
-    
+      @user = User.find_by_id(params[:id])
+      @user.destroy
+      render json: @user
     end 
     private 
 
