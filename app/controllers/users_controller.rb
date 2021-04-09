@@ -25,6 +25,7 @@ class UsersController < ApplicationController
    
 
     def update 
+      #  byebug
       @user = User.find_by(id: params[:id])
        @user.update(users_params)
       render json: @user
@@ -41,6 +42,6 @@ class UsersController < ApplicationController
 
     def users_params
     
-      params.require(:user).permit(:username, :password, :income, :budget, :year, :monthly)
+      params.require(:user).permit(:username, :password, :income, :budget, :yearly, :monthly)
    end
 end

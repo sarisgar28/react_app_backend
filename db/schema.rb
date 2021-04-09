@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2021_03_30_140340) do
     t.string "username"
     t.integer "income"
     t.integer "budget"
-    t.boolean "year"
+    t.boolean "yearly"
     t.boolean "monthly"
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false

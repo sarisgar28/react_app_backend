@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :username
       t.integer :income
       t.integer :budget 
-      t.boolean :year
+      t.boolean :yearly
       t.boolean :monthly
       t.string :password_digest
 

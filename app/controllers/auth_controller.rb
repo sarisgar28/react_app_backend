@@ -31,6 +31,7 @@ class AuthController < ApplicationController
       render json: @user
     end
 
+    # render json: { user: UserSerializer.new(user) }, status: :accepted
 
       
    private 
