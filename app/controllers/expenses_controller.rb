@@ -1,26 +1,26 @@
 class ExpensesController < ApplicationController
-    before_action :find_user
+    # before_action :find_user
     # before_action :authorized
 
 
     def index 
         # byebug
-        @expenses = @user.expenses
+        @expenses = current_user.expenses
         render json: @expenses
     end 
 
     def show
-        @expense = @user.expense.find_by(id: params[:id])
+        @expense = current_user.expense.find_by(id: params[:id])
         render json: @expense
     end 
     
     def create 
-        @user = User.find_or_create_by(user_params)
-        @expense = user.expenses.build(expenses_params)
-       if @user.valid? && @expense.save
-            render json:  @expense
-        else 
-            render json: {error: "Ooops! It didn't work, try again!"}
+        expense = Expense.new(expenses_params)
+        expense.user = current_user
+        if expense.save
+            render json: expense
+        else
+            render json: {error: "There was a problem saving expense", message: expense.errors.full_messages}
         end
     end 
 
@@ -42,19 +42,15 @@ class ExpensesController < ApplicationController
     
     private 
 
-    def find_user
-        @user = User.find_by(id: params[:user_id])
+    # def find_user
+    #     @user = User.find_by(id: params[:user_id])
+    # end
+
+
+    def expenses_params
+       params.require(:expense).permit(:name, :amount)
     end
 
-    private 
 
-   def expenses_params
-       params.require(:expense).permit(:name, :amount, :user_id)
-    end
-
-
-   def user_params
-    params.require(:user).permit(:username, :password)
- end
     
 end
