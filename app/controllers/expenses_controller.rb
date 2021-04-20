@@ -1,6 +1,6 @@
 class ExpensesController < ApplicationController
     # before_action :find_user
-    # before_action :authorized
+    before_action :authorized
 
 
     def index 
