@@ -1,5 +1,5 @@
 class ExpensesController < ApplicationController
-    # before_action :find_user
+    
     before_action :authorized
 
 
@@ -41,12 +41,6 @@ class ExpensesController < ApplicationController
     
     
     private 
-
-    # def find_user
-    #     @user = User.find_by(id: params[:user_id])
-    # end
-
-
     def expenses_params
        params.require(:expense).permit(:name, :amount)
     end
